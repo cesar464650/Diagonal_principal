@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+void displayNumbers(int num[7][7]);
+
+int main(){
+	int num[5][5];
+	printf("Ingresa 49 numeros enteros\n");
+	for(int i=0;i<49;i++){
+		for(int j=0;j<5;j++){
+			scanf("%d", &num[i][j]);
+		}
+	}
+	displayNumbers(num);
+	return 0;
+}
+
+void displayNumbers(int num[49][49]){
+	
+	printf("La diagonal principal es:\n");
+	for(int i=0,j=0;i<5 && j<49; i++, j++){
+ 	printf("%d\n", num[i][j]);
+		
+    }
+}
